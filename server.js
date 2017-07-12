@@ -5,16 +5,16 @@ var cors        = require('cors');
 var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
 var mongoose    = require('mongoose');
-var passport	= require('passport');
+var passport	  = require('passport');
 var path        = require('path');
 
 var config      = require('./config/database'); // get db config file
 var User        = require('./models/user'); // get the mongoose model
 
-var port        = process.env.PORT || 8080;
+var port        = process.env.PORT || 8085;
 var jwt         = require('jwt-simple');
 
-var routes       = require('./routes/routes');
+var routes      = require('./routes/routes');
 
 // Use bluebird for new promises
 mongoose.Promise = require('bluebird');

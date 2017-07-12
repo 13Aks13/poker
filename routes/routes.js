@@ -35,7 +35,7 @@ router.post('/signup', function( req, res, next ) {
                 password: req.body.password,
                 role: role._id
             });
-            // console.log('NewUser:', newUser);
+            console.log('NewUser:', newUser);
             // Save the user
             newUser.save(function(err) {
                 if (err) {
